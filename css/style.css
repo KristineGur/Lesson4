@@ -1,21 +1,14 @@
-body {
-  background-color: lightgray
-}
-
 /* მშობელი კონტეინერი. მაქსიმალური სიგანე არის 1500px, მაგრამ ცალკე width: 100%-ის გაწერით, სხვა დივაისით გახსნისას ეს 1500px დაიჭერს იმ სხვა დივაისის ეკრანის 100%-ს. */
 .container {
-  max-width: 1500px;
+  max-width: 1920px;
   width: 100%;
-  height: 800px;
-  border: 1px solid grey;
-  margin: 0 auto;
-  margin-top: 40px;
+  height: 875px;
 }
 
 /* aside-ის ყუთს უჭირავს მშობელი კონტეინერის სიგანის 20% და სიგრძის 100%. float: left-ის გაწერის გარეშეც ავტომატურად მარცხნივ განთავსდებოდა, მაგრამ მშობელ კონტეინერში სხვა ყუთების ერთმანეთის გვერდი-გვერდ განსალაგებლად აუცილებელია სამივე ყუთს (aside, header, section) გაეწეროს float: left  */
 aside {
   width: 20%;
-  height: 100%;
+  height: 875px;
   background-color: #FFFFFF;
   float: left;
 }
@@ -29,7 +22,7 @@ header {
 
 section {
   width: 80%;
-  height: 730px;
+  height: 875px;
   background-color: #FAFBFC;
   float: left;
 }
@@ -39,7 +32,7 @@ section {
   font-size: 20px;
   text-align: center;
   line-height: 40px;
-  margin-bottom: 25px;
+  margin-bottom: 40px;
 }
 
 /* Underline-ს შემოტანა ფსევდო ელემენტით */
@@ -60,16 +53,16 @@ section {
 /* ეხება მხოლოდ MENU ტექსტს */
 .menu {
   font-weight: bold;
-  padding-left: 65px;
+  padding-left: 90px;
   padding-bottom: 10px;
 }
 
 /* Menu-ში შემავალი ჩამონათვალი, რომელიც ერთმანეთისგან დაშორებულია line-height-ით */
 .asideMiddle {
   font-size: 20px;
-  line-height: 40px ;
+  line-height: 45px ;
   margin-left: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 60px;
 }
 
 /* Icon-ის შემოტანა ფსევდო ელემენტით. html-ში, head თეგებს შორის ვსმათ შემდეგ ლინკს <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"/> Icon-ებს კი ვირჩევთ https://fontawesome.com/v6/icons/chart-line?s=light&f=classic ამ ლინკიდან*/
@@ -190,12 +183,18 @@ nav {
   padding-top: 10px;
 }
 
+article {
+  width: 1200px;
+  height: 540px;
+  background-color: #F7F7F7;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
 .imgcomp {
   float: left;
   width: 550px;
   height: 540px;
-  padding-top: 50px;
-  padding-left: 50px;
 }
 
 .sectDiv {
@@ -203,9 +202,7 @@ nav {
   width: 480px;
   height: 540px;
   margin-top: 50px;
-  padding-left: 50px;
-  padding-right: 20px;
-  background-color: #F7F7F7;
+  padding-left: 80px;
 }
 
 .sectH1text {
