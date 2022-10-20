@@ -1,11 +1,11 @@
-/* მშობელი კონტეინერი. მაქსიმალური სიგანე არის 1500px, მაგრამ ცალკე width: 100%-ის გაწერით, სხვა დივაისით გახსნისას ეს 1500px დაიჭერს იმ სხვა დივაისის ეკრანის 100%-ს. */
+/* მშობელი div კონტეინერის და შვილობილი: aside, header და section ბოქსების საზღვრები და განლაგება */
 .container {
   max-width: 1920px;
   width: 100%;
   height: 875px;
 }
 
-/* aside-ის ყუთს უჭირავს მშობელი კონტეინერის სიგანის 20% და სიგრძის 100%. float: left-ის გაწერის გარეშეც ავტომატურად მარცხნივ განთავსდებოდა, მაგრამ მშობელ კონტეინერში სხვა ყუთების ერთმანეთის გვერდი-გვერდ განსალაგებლად აუცილებელია სამივე ყუთს (aside, header, section) გაეწეროს float: left  */
+/* aside-ის ყუთს უჭირავს მშობელი კონტეინერის სიგანის 20% და სიგრძის 100%. float: left-ის გაწერის გარეშეც ავტომატურად მარცხნივ განთავსდებოდა, მაგრამ მშობელ კონტეინერში სხვა ყუთების ერთმანეთის გვერდი-გვერდ განსალაგებლად აუცილებელია სამივე ყუთს (aside, header, section) გაეწეროს float: left */
 aside {
   width: 20%;
   height: 875px;
@@ -27,9 +27,11 @@ section {
   float: left;
 }
 
+/*                        Aside-ის Top, Middle & Bottom მხარეების სტილები */
 .asideTop {
   margin-top: 35px;
   font-size: 20px;
+  font-family: 'Titillium Web';
   text-align: center;
   line-height: 40px;
   margin-bottom: 40px;
@@ -53,19 +55,22 @@ section {
 /* ეხება მხოლოდ MENU ტექსტს */
 .menu {
   font-weight: bold;
-  padding-left: 90px;
   padding-bottom: 10px;
+  font-family: 'Titillium Web';
 }
 
 /* Menu-ში შემავალი ჩამონათვალი, რომელიც ერთმანეთისგან დაშორებულია line-height-ით */
 .asideMiddle {
   font-size: 20px;
+  font-family: 'Titillium Web';
   line-height: 45px ;
   margin-left: 50px;
   margin-bottom: 60px;
 }
 
-/* Icon-ის შემოტანა ფსევდო ელემენტით. html-ში, head თეგებს შორის ვსმათ შემდეგ ლინკს <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"/> Icon-ებს კი ვირჩევთ https://fontawesome.com/v6/icons/chart-line?s=light&f=classic ამ ლინკიდან*/
+/* Icon-ის შემოტანა ფსევდო ელემენტით. html-ში, head თეგებს შორის ვსმათ შემდეგ ლინკს <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer"/> 
+Icon-ებს კი ვირჩევთ https://fontawesome.com/v6/icons/chart-line?s=light&f=classic ამ ლინკიდან*/
+
 .inbox::before {
   font-family: "Font Awesome 5 free";
   content: "\f007";
@@ -136,14 +141,15 @@ section {
 }
 
 .asideBottom {
-  margin-left: 60px;
+  margin: 60px;
 }
 
-/* პირველი aside ღილაკი */
+/* aside-ის პირველი ღილაკი */
 .asidebott1 {
   width: 180px;
   height: 50px;
   font-size: 17px;
+  font-family: 'Titillium Web';
   background-color: #226CFC;
   color: #FFFFFF;
   border-style: none;
@@ -151,16 +157,19 @@ section {
   display: block;
 }
 
-/* მეორე aside ღილაკი */
+/* aside-ის მეორე ღილაკი */
 .asidebott2 {
   width: 180px;
   height: 50px;
   font-size: 17px;
+  font-family: 'Titillium Web';
   background-color: #dbe2f1;
   color: #226CFC;
   border-style: none;
   display: block;
 }
+
+/*                                              Header */
 
 /* float right-ით ნავიგაცია განთავსდა ლოგოს მარჯვენა მხარე, ხოლო padding-ებით, header-ის საზღვრებიდან გასწორდა ცენტრში */
 nav {
@@ -174,6 +183,7 @@ nav {
   display: inline;
   color: #FFFFFF;
   font-size: 25px;
+  font-family: 'Titillium Web';
   font-weight: bold;
   margin-left: 30px;
 }
@@ -183,6 +193,7 @@ nav {
   padding-top: 10px;
 }
 
+/*                                             Section */
 article {
   width: 1200px;
   height: 540px;
@@ -197,6 +208,7 @@ article {
   height: 540px;
 }
 
+/* სათაურის და ტექსტის დივი */
 .sectDiv {
   float: left;
   width: 480px;
@@ -205,11 +217,14 @@ article {
   padding-left: 80px;
 }
 
+/* სათაურის პარამეტრები */
 .sectH1text {
   font-size: 35px;
   padding-top: 30px;
+  font-family: 'Titillium Web';
 }
 
+/* Underline-ს შემოტანა ფსევდო ელემენტით */
 .sectH1text::after {
   content: "";
   border: 1px solid #FFEB00;
@@ -218,17 +233,21 @@ article {
   margin-top: 10px;
 }
 
+/* ტექსტის პარამეტრები */
 .sectPtext {
   color: #707070;
   font-size: 20px;
+  font-family: 'Titillium Web';
   margin-top: 65px;
   margin-bottom: 75px;
 }
 
+/* სექციის ბათონ ღილაკის პარამეტრები */
 .sectBUTT {
   width: 140px;
   height: 50px;
   font-size: 17px;
+  font-family: 'Titillium Web';
   border: 2px solid #A8ABB7;
   background-color: #FFEB00;
 }
